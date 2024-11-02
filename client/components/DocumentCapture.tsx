@@ -11,10 +11,7 @@ interface DocumentData {
   expirationDate: string;
 }
 
-const API =
-  process.env.API ||
-  "http://localhost:3000/extract" ||
-  "https://dl-information.onrender.com/extract";
+const API = process.env.API || "https://dl-information.onrender.com/extract";
 
 const DocumentCapture: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
